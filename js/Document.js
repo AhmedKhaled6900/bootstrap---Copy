@@ -100,6 +100,20 @@ let navlinks = document.querySelectorAll(
 );
 
 let navlinksarray = Array.from(navlinks);
+ 
+// handle nave menu closure ####
+
+let canvas = document.querySelector(" .navbar .offcanvas")
+console.log(canvas)
+navlinksarray.map((btn=>
+btn.addEventListener("click" ,()=> canvas.classList.remove("show"))
+))
+// navlinks.forEach((link)=>{
+//   link.onclick(
+//     ()=>canvas.classList.remove("show")
+
+//   )
+// })
 let allsection = document.querySelectorAll(".section");
 let section = Array.from(allsection);
 let door = document.querySelector(".door");
