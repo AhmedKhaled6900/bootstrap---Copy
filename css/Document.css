@@ -2,9 +2,8 @@
   --main--color: #6e2105;
   --main--background: url("imgs/3d-digital-art-abstract-simple-background-wallpaper-preview.jpg")
 }
-/* body {
-  height: 1200px;
-} */
+body {
+overflow: visible;}
 
 /* Settings Box */
 
@@ -87,7 +86,7 @@
 /* Landing  */
 
 .landing {
-  min-height: 100vh;
+  min-height: 84vh;
 background: black;
   background-size: cover;
   width: 100%;
