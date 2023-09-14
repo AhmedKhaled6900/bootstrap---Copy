@@ -348,6 +348,12 @@ p{
   color: wheat;
   transition: 1s;
 }
+.backendtext:hover {
+border-color: wheat;
+}
+.frontendtext:hover {
+border-color: wheat;
+}
 
 .uxicon{
 
