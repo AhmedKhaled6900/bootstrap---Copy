@@ -325,16 +325,13 @@ background-color: transparent;
   color: wheat;
 }
 .frontendtext{
-  box-shadow: 0 0 0.1rem var(--bs-body-bg);
+  box-shadow: 0 0 0.1rem var(--main--color);
   margin-bottom: 24px;
-  border: 1px solid var(--bs-black);
-  border-radius: 5px;
+  border: 1px solid var(--main--color);
+  border-radius: 8px;
   background-color: black;
   color: wheat;
-  /* font-size: 15px; */
-  /* min-height: 425px; */
-
-
+  transition: 1
 }
 p{
   text-align: start;
@@ -343,10 +340,10 @@ p{
 
 
 .backendtext{
-  box-shadow: 0 0 0.1rem var(--bs-body-bg);
+  box-shadow: 0 0 0.1rem var(--main--color);
   margin-bottom: 24px;
-  border: 1px solid var(--bs-black);
-  border-radius: 5px;
+  border: 1px solid var(--main--color);
+  border-radius: 8px;
   background-color: black;
   color: wheat;
   transition: 1s;
