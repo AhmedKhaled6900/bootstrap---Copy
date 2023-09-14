@@ -331,13 +331,14 @@ background-color: transparent;
   border-radius: 5px;
   background-color: black;
   color: wheat;
-  font-size: 15px;
+  /* font-size: 15px; */
   /* min-height: 425px; */
 
 
 }
 p{
   text-align: start;
+  font-size: 12px;
 }
 
 
@@ -349,8 +350,8 @@ p{
   background-color: black;
   color: wheat;
 
-  font-size: 15px;
-  min-height: 425px;
+  /* font-size: 15px; */
+  /* min-height: 425px; */
 
 
   transition: 1s;
