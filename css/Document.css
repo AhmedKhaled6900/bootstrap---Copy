@@ -332,9 +332,12 @@ background-color: transparent;
   background-color: black;
   color: wheat;
   font-size: 15px;
-  min-height: 425px;
+  /* min-height: 425px; */
 
 
+}
+p{
+  text-align: start;
 }
 
 
