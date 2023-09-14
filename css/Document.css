@@ -86,8 +86,9 @@ overflow: visible;}
 
 .landing {
   min-height: 84vh;
-background: black;
-  background-size: cover;
+   background: linear-gradient(180deg,  black, black ,var(--main--color),black);
+/* background: black; */
+  /* background-size: cover; */
   width: 100%;
 }
 .arrow {
