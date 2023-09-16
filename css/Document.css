@@ -173,7 +173,7 @@ margin-top: 50px;
 .offcanvas.offcanvas-end {
   top: 74px;
   width: 100%;
-  background-color: #00000061;
+  background-color: black;
   height: 100vh;
 }
 .nav-item a {

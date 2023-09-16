@@ -102,11 +102,19 @@ let navlinks = document.querySelectorAll(
 let navlinksarray = Array.from(navlinks);
  
 // handle nave menu closure ####
+ let secondCanvas=document.getElementsByClassName("offcanvas-backdrop")
 
+ 
+
+
+
+ console.log(secondCanvas)
 let canvas = document.querySelector(" .navbar .offcanvas")
 console.log(canvas)
 navlinksarray.map((btn=>
-btn.addEventListener("click" ,()=> canvas.classList.remove("show"))
+btn.addEventListener("click" ,()=> {canvas.classList.remove("show") 
+secondCanvas.classList.remove("show")
+})
 ))
 // navlinks.forEach((link)=>{
 //   link.onclick(
@@ -188,6 +196,7 @@ tapsarray.forEach((tap)=>{
     tapssections.forEach((div)=>{
       div.classList.remove("active")
     })
+    div.currentTarget.classList.add("active")
   })
 })
 gsap.to(".card",{y:-100,stagger:{
@@ -197,6 +206,7 @@ gsap.to(".card",{y:-100,stagger:{
 //   element.addEventListener("click", function (e) {
 //     tapsarray.forEach((element) => {
 //       element.classList.remove("active");
+//       element.target.classList.add("active")
 //     });
 //     e.currentTarget.classList.add("active");
 
