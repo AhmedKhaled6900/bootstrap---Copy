@@ -210,9 +210,12 @@ carouselImages.forEach((img)=>{
    let imgoverlay=document.createElement("div")
    imgoverlay.classList.add("img-overlay")
    let theImg=document.createElement("img")
+   theImg.classList.add("img-fluid")
    theImg.src= e.target.src
    imgcontainer.appendChild(theImg) ,
    imgcontainer.className=("imgcontainer")
+   imgcontainer.classList.add("container")
+
    imgoverlay.appendChild(imgcontainer)
    document.body.appendChild(imgoverlay)
    let x= document.createElement("div")
