@@ -195,13 +195,36 @@ tapsarray.forEach((tap)=>{
     e.currentTarget.classList.add("active")
     tapssections.forEach((div)=>{
       div.classList.remove("active")
+      document.querySelector(e.currentTarget.dataset.content).classList.add("active")
+      // div.currentTarget.classList.add("active")
+
     })
-    div.currentTarget.classList.add("active")
   })
 })
-gsap.to(".card",{y:-100,stagger:{
-  ammounteach:.2
-}})
+let websection=document.querySelector(".webdesignsection")
+let carouselImages=document.querySelectorAll(".carousel-inner img")
+console.log(carouselImages)
+carouselImages.forEach((img)=>{
+  img.addEventListener("click",(e)=>{
+   let imgcontainer= document.createElement("div")
+   let imgoverlay=document.createElement("div")
+   imgoverlay.classList.add("img-overlay")
+   let theImg=document.createElement("img")
+   theImg.src= e.target.src
+   imgcontainer.appendChild(theImg) ,
+   imgcontainer.className=("imgcontainer")
+   imgoverlay.appendChild(imgcontainer)
+   document.body.appendChild(imgoverlay)
+   let x= document.createElement("div")
+   x.appendChild(document.createTextNode("X"))
+   imgcontainer.appendChild(x)
+   x.addEventListener("click",()=>{
+    imgoverlay.remove()
+   })
+  }
+ )
+})
+
 // tapsarray.forEach((element) => {
 //   element.addEventListener("click", function (e) {
 //     tapsarray.forEach((element) => {

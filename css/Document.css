@@ -642,3 +642,35 @@ color: wheat;
 .animate__animated.animate__fadeIn {
   --animate-duration: 4s;
 }
+/* .imgcontainer{
+  position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 40000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.img-overlay{
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: black;
+  z-index: 100001;
+  width: 100%;
+  height: 100%;
+
+}
+
+.imgcontainer {
+  position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    font-size: 30px;
+    z-index: 10000;
+    
+}
