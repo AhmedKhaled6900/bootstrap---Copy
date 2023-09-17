@@ -216,6 +216,7 @@ carouselImages.forEach((img)=>{
    imgoverlay.appendChild(imgcontainer)
    document.body.appendChild(imgoverlay)
    let x= document.createElement("div")
+   x.classList.add("close-btn")
    x.appendChild(document.createTextNode("X"))
    imgcontainer.appendChild(x)
    x.addEventListener("click",()=>{

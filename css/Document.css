@@ -674,3 +674,17 @@ color: wheat;
     z-index: 10000;
     
 }
+.close-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: black;
+width: 40px;
+height: 40px;
+color: wheat;
+cursor: pointer;
+
+}
