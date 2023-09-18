@@ -392,9 +392,9 @@ border-color: wheat;
   margin-left: 5px;
   color: wheat;
 }
-.sectionscontainer .card img{
+/* .sectionscontainer .card img{
  height: 250px;
-}
+} */
 .ourgallary ul li:not(.active):hover {
   background-color: var(--main--color);
 }
@@ -704,46 +704,14 @@ cursor: pointer;
 }  
 
 
- 
-  /* .images {
-     display: grid; 
-    gap: 1rem;
-    grid-template:
+.card-imgs-container{
+display: flex;
+justify-content: space-between;
+}  
 
-      "b-l b-r";
-
-  img:nth-child(1) {
-      grid-area: top;
-    }
-    img:nth-child(2) {
-      grid-area: b-l;
-    }
-    img:nth-child(3) {
-      grid-area: b-r;
-    }
-
-    &.state-2 {
-      img:nth-child(1) {
-        grid-area: b-r;
-      }
-      img:nth-child(2) {
-        grid-area: top;
-      }
-      img:nth-child(3) {
-        grid-area: b-l;
-      }
-    }
-    &.state-3 {
-      img:nth-child(1) {
-        grid-area: b-l;
-      }
-      img:nth-child(2) {
-        grid-area: b-r;
-      }
-      img:nth-child(3) {
-        grid-area: top;
-      }
-    }
-  }  
+.card-imgs-container img{
+width: 24%;
+height:24%;
+}  
 
 

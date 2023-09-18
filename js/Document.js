@@ -102,18 +102,21 @@ let navlinks = document.querySelectorAll(
 let navlinksarray = Array.from(navlinks);
  
 // handle nave menu closure ####
- let secondCanvas=document.getElementsByClassName("offcanvas-backdrop")
 
  
 
+let secondCanvas=document.getElementsByClassName("offcanvas-backdrop")
 
 
- console.log(secondCanvas)
 let canvas = document.querySelector(" .navbar .offcanvas")
 console.log(canvas)
+
 navlinksarray.map((btn=>
-btn.addEventListener("click" ,()=> {canvas.classList.remove("show") 
-secondCanvas.classList.remove("show")
+btn.addEventListener("click" ,()=> {
+
+  canvas.classList.remove("show") ,
+
+secondCanvas.classList.remove("fade")
 })
 ))
 navlinks.forEach((link)=>{
@@ -237,6 +240,16 @@ carouselImages.forEach((img)=>{
    })
   }
  )
+})
+
+let cardimgsarray = Array.from(document.querySelectorAll("#card-imgs-container img")) 
+console.log(cardimgsarray)
+let cardimg=document.querySelector("#firstCard img")
+cardimgsarray.forEach((img)=>{
+  img.addEventListener("click",()=>{
+    cardimg.src=img.src
+
+  })
 })
 
 // tapsarray.forEach((element) => {
