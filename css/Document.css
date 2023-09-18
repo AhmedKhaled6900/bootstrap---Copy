@@ -3,7 +3,12 @@
   --main--background: url("imgs/3d-digital-art-abstract-simple-background-wallpaper-preview.jpg")
 }
 body {
-overflow: visible;}
+}
+
+.remove-hidden{
+  overflow: visible;
+  padding: 17px;
+}
 
 /* Settings Box */
 
@@ -26,6 +31,10 @@ overflow: visible;}
 
   transition: 0.5s;
 }
+.navbar-collapse.show {
+  display: none;
+}
+
 .settings-box.active {
   transform: translate(0);
 }
@@ -672,6 +681,7 @@ color: wheat;
     transform: translate(-50% , -50%);
     font-size: 30px;
     z-index: 10000;
+    width: 100%;
     
 }
 .close-btn{
@@ -688,3 +698,52 @@ color: wheat;
 cursor: pointer;
 
 }
+
+.over {
+  overflow:hidden;
+}  
+
+
+ 
+  /* .images {
+     display: grid; 
+    gap: 1rem;
+    grid-template:
+
+      "b-l b-r";
+
+  img:nth-child(1) {
+      grid-area: top;
+    }
+    img:nth-child(2) {
+      grid-area: b-l;
+    }
+    img:nth-child(3) {
+      grid-area: b-r;
+    }
+
+    &.state-2 {
+      img:nth-child(1) {
+        grid-area: b-r;
+      }
+      img:nth-child(2) {
+        grid-area: top;
+      }
+      img:nth-child(3) {
+        grid-area: b-l;
+      }
+    }
+    &.state-3 {
+      img:nth-child(1) {
+        grid-area: b-l;
+      }
+      img:nth-child(2) {
+        grid-area: b-r;
+      }
+      img:nth-child(3) {
+        grid-area: top;
+      }
+    }
+  }  
+
+

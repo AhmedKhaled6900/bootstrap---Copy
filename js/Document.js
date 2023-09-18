@@ -116,12 +116,18 @@ btn.addEventListener("click" ,()=> {canvas.classList.remove("show")
 secondCanvas.classList.remove("show")
 })
 ))
-// navlinks.forEach((link)=>{
-//   link.onclick(
-//     ()=>canvas.classList.remove("show")
+navlinks.forEach((link)=>{
+  link.addEventListener("click",()=>
+  
+  {
+    canvas.classList.remove("show")
+    document.body.removeAttribute("style")
+  }
 
-//   )
-// })
+   
+
+  )
+})
 let allsection = document.querySelectorAll(".section");
 let section = Array.from(allsection);
 let door = document.querySelector(".door");
@@ -165,6 +171,7 @@ window.onscroll = () => {
 navlinksarray.forEach((link) => {
   link.addEventListener("click", (e) => {
     navlinksarray.forEach((e) => {
+
       e.classList.remove("active");
     });
 
@@ -211,6 +218,8 @@ carouselImages.forEach((img)=>{
    imgoverlay.classList.add("img-overlay")
    let theImg=document.createElement("img")
    theImg.classList.add("img-fluid")
+   theImg.classList.add("col-12")
+   document.body.classList.add("over")
    theImg.src= e.target.src
    imgcontainer.appendChild(theImg) ,
    imgcontainer.className=("imgcontainer")
@@ -223,6 +232,7 @@ carouselImages.forEach((img)=>{
    x.appendChild(document.createTextNode("X"))
    imgcontainer.appendChild(x)
    x.addEventListener("click",()=>{
+    document.body.classList.remove("over")
     imgoverlay.remove()
    })
   }
@@ -336,5 +346,43 @@ carouselImages.forEach((img)=>{
 //   });
 // }
 
+
+// gsap.registerPlugin(Flip);
+
+// function doFlip(el) {
+//   const imageParent = el.target.closest(".images");
+//   const allImages = imageParent.querySelectorAll("img");
+//   const state = Flip.getState(allImages);
+
+//   // stop the parent from collapsing
+//   // while the children are absolutely positioned.
+//   imageParent.style.height = `${imageParent.offsetHeight}px`;
+
+//   // Make DOM or styling changes
+//   if (imageParent.classList.contains("state-1")) {
+//     imageParent.classList.remove("state-1");
+//     imageParent.classList.add("state-2");
+//   } else if (imageParent.classList.contains("state-2")) {
+//     imageParent.classList.remove("state-2");
+//     imageParent.classList.add("state-3");
+//   } else {
+//     imageParent.classList.remove("state-3");
+//     imageParent.classList.add("state-1");
+//   }
+
+//   Flip.from(state, {
+//     duration: 1.2,
+//     ease: "power1.inOut",
+//     absolute: true, // take the images out of the document flow during flip
+//     onComplete: () => {
+//       imageParent.style.height = "unset"; // reset container height
+//     }
+//   });
+// }
+
+// const allImageZones = document.querySelectorAll(".images");
+// allImageZones.forEach((zone) => {
+//   zone.addEventListener("click", doFlip);
+// });
 
 
