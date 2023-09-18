@@ -711,7 +711,10 @@ justify-content: space-between;
 
 .card-imgs-container img{
 width: 24%;
-height:24%;
+
 }  
+#firstCard .card-img-top{
+min-height: 340px;
+}
 
 
