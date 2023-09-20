@@ -713,7 +713,7 @@ justify-content: space-between;
 width: 24%;
 height: auto;
 border-radius: 4px;
-box-shadow: 0rem 0 0.5rem var(--main--color);
+/* box-shadow: 0rem 0 0.5rem var(--main--color); */
 
 
 }  
@@ -721,7 +721,7 @@ box-shadow: 0rem 0 0.5rem var(--main--color);
 /* border: 1px solid var(--main--color); */
 box-shadow: 0rem 0 0.5rem var(--main--color);
 border-radius: 4px;
-border: 1px solid var(--main--color);
+/* border: 1px solid var(--main--color); */
 
 }  
 #firstCard{
