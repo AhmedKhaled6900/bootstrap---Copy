@@ -712,8 +712,20 @@ justify-content: space-between;
 .card-imgs-container img{
 width: 24%;
 height: auto;
+border-radius: 4px;
 
 }  
+.card-imgs-container img.active{
+/* border: 1px solid var(--main--color); */
+box-shadow: 0rem 0 0.5rem var(--main--color);
+border-radius: 4px;
+
+}  
+#firstCard{
+  background-color: black;
+}
+
+
 #firstCard .card-img-top{
 max-height: 200px;
 }

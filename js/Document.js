@@ -246,8 +246,13 @@ let cardimgsarray = Array.from(document.querySelectorAll("#card-imgs-container i
 console.log(cardimgsarray)
 let cardimg=document.querySelector("#firstCard img")
 cardimgsarray.forEach((img)=>{
-  img.addEventListener("click",()=>{
+  img.addEventListener("click",(e)=>{
+    cardimgsarray.forEach((i)=>{
+      i.classList.remove("active")
+    })
     cardimg.src=img.src
+    // e.classList.remove("active")
+    e.currentTarget.classList.add("active")
 
   })
 })
