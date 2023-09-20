@@ -224,8 +224,11 @@ carouselImages.forEach((img)=>{
    theImg.classList.add("col-12")
    document.body.classList.add("over")
    theImg.src= e.target.src
-   imgcontainer.appendChild(theImg) ,
+   let contDiv=document.createElement("div")
+   contDiv.appendChild(theImg)
+   imgcontainer.appendChild(contDiv) ,
    imgcontainer.className=("imgcontainer")
+
    imgcontainer.classList.add("container")
 
    imgoverlay.appendChild(imgcontainer)
@@ -233,7 +236,7 @@ carouselImages.forEach((img)=>{
    let x= document.createElement("div")
    x.classList.add("close-btn")
    x.appendChild(document.createTextNode("X"))
-   imgcontainer.appendChild(x)
+   contDiv.appendChild(x)
    x.addEventListener("click",()=>{
     document.body.classList.remove("over")
     imgoverlay.remove()
