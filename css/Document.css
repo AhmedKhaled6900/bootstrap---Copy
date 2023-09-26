@@ -392,8 +392,8 @@ border-color: wheat;
   margin-left: 5px;
   color: wheat;
 }
-/* .sectionscontainer .card img{
- height: 250px;
+/* .sectionscontainer {
+ height: 600px;
 } */
 .ourgallary ul li:not(.active):hover {
   background-color: var(--main--color);
@@ -563,9 +563,9 @@ transition: 1s;
 .webdesignsection{
   position: absolute;
 }
-.mobilesection{
+/* .mobilesection{
   position: absolute;
-}
+} */
 
 .contact{
 background-color: black;
