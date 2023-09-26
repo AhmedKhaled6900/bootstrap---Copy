@@ -38,14 +38,11 @@ a {
   flex-direction: column;
   box-shadow: 0 15px 45px 0 rgba(0, 0, 0, 0.15);
   position: relative;
- color: wheat;
-  background-image: linear-gradient(135deg, rgba(74, 222, 128, 0.15), rgba(29, 123, 219, 0.1) 20%, var(--c-blue-700) 40%, var(--c-blue-700) 100%);
   text-align: start;
-  border: 1px solid  linear-gradient(135deg, rgba(74, 222, 128, 0.15), rgba(29, 123, 219, 0.1) 20%, var(--c-blue-700) 40%, var(--c-blue-700) 100%);
-
+  z-index: 1;
+  color: wheat;
+  background-image: linear-gradient(135deg, rgba(74, 222, 128, 0.15), rgba(29, 123, 219, 0.1) 20%, var(--c-blue-700) 40%, var(--c-blue-700) 100%);
 }
-
-
 .price-table:after {
   content: "";
   display: block;
@@ -67,7 +64,7 @@ a {
   align-items: center;
   gap: 4px;
   position: relative;
-
+  color: #fff;
 }
 .price-table .price small {
   font-size: 1.25rem;
