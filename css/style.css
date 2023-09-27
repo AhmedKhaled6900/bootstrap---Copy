@@ -33,7 +33,7 @@ a {
   background-color: var(--c-blue-700);
   border-radius: 16px;
   max-width: 375px;
-  padding: 32px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   box-shadow: 0 15px 45px 0 rgba(0, 0, 0, 0.15);
