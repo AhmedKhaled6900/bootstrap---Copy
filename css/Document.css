@@ -747,7 +747,9 @@ max-height: 200px;
 }
 
 
-
+.co-img{
+  border: 1px solid black;
+}
 
 
 
