@@ -260,6 +260,15 @@ cardimgsarray.forEach((img)=>{
   })
 })
 
+const seeMoreButtons = document.querySelectorAll(".see-more-button");
+
+seeMoreButtons.forEach((seeMoreButton) => {
+  seeMoreButton.addEventListener("click", (event) => {
+    const cardParagraph = event.target.closest(".card").querySelector(".card-paragraph");
+    cardParagraph.classList.toggle("is-expanded");
+  });
+});
+
 // tapsarray.forEach((element) => {
 //   element.addEventListener("click", function (e) {
 //     tapsarray.forEach((element) => {
