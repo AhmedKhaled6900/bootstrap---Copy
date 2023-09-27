@@ -379,6 +379,7 @@ border-color: wheat;
   background-image: linear-gradient(180deg, black, var(--main--color), black);
 
     position: relative;
+    height: 100%;
   }
 
 .ourgallary ul .active {
@@ -549,22 +550,28 @@ transition-delay: 1s;
   border-radius: 10px;
 }
 .tap-section{
-transform: translateX(-105%);
+/* transform: translateX(-105%); */
+display: none;
 opacity: 0;
 }
 .tap-section.active{
 transform: unset;
 opacity: 1;
 transition: 1s;
+display: block;
 }
 .sectionscontainer{
   position: relative;
 }
-.webdesignsection{
+/* .webdesignsection{
   position: absolute;
+  top: 0;
+  left: 0;
 }
-/* .mobilesection{
+.mobilesection{
   position: absolute;
+  top: 0;
+  left: 0;
 } */
 
 .contact{
@@ -738,72 +745,9 @@ max-height: 200px;
 .slider-container .slider-nav{
   color: white;
 }
-.product-card {
-  width: 250px;
-  height: 300px;
-  margin: 10px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease-in-out;
-}
 
-.product-card:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  transform: scale(1.1);
-}
 
-.product-info {
-  padding: 10px;
-}
 
-.price {
-  font-size: 18px;
-  font-weight: bold;
-}
 
-.add-to-cart {
-  background-color: #000;
-  color: #fff;
-  padding: 10px;
-  border-radius: 5px;
-  transition: all 0.3s ease-in-out;
-}
-
-.add-to-cart:hover {
-  background-color: #fff;
-  color: #000;
-  transform: scale(1.1);
-}
-/* .name:hover{
-  color: var(--main--color);
-} */
-.name:hover + .question-icon{
-  color: var(--main--color);
-}
-
-.card-paragraph {
-  font-size: 16px;
-  line-height: 24px;
-  overflow: hidden;
-  height: 60px;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-}
-
-/* .see-more-button {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  display: block;
-  padding: 5px 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  cursor: pointer;
-} */
-
-.card-paragraph.is-expanded {
-  height: auto;
-  -webkit-line-clamp: unset;
-}
 
 
