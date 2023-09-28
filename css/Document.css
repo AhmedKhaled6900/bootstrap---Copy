@@ -748,7 +748,6 @@ max-height: 200px;
 
 
 .co-img{
-  border: 1px solid black;
   position: relative;
   display: flex;
   justify-content: center;
@@ -758,9 +757,20 @@ max-height: 200px;
 
 text-align: center;
 }
+.co-img img{
+  border-radius: 15px;
+  box-shadow: 0rem 0 0.5rem black;
+
+}
 
 .co-img:hover .tool{
 height: 25%;
+border-radius: 15px 15px 0 0;
+box-shadow: 0rem 0 0.5rem white;
+}
+.co-img:hover img{
+  box-shadow: 0rem 0 0.5rem whitesmoke;
+  
 }
 
 .tool{
