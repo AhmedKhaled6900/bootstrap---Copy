@@ -749,7 +749,33 @@ max-height: 200px;
 
 .co-img{
   border: 1px solid black;
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+}
+.co-img p{
+
+text-align: center;
 }
 
+.co-img:hover .tool{
+height: 25%;
+}
+
+.tool{
+
+  position: absolute;
+  background-color: wheat;
+  width: 80%;
+  bottom: 0;
+
+  overflow: hidden;
+  transition: 1s;
+  text-align: center;
+    background-color: #00000075;
+    color: white;
+  height: 0;
 
 
+}
